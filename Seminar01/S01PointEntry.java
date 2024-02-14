@@ -61,7 +61,7 @@ public class S01PointEntry {
 
         println("");  // вывод строки (String a) прописанной в коде ниже, где,
                         // в данном случае,в качестве переменной задана "a", 
-                        // появляющаяся перед кавычками, в виде подсказки Java
+                        // появляющаяся перед кавычками, в виде подсказки Java в VSCode
     }
      
     public static void println(String a) { // метод "println(String x)", из коего взялась "x:" 
@@ -69,7 +69,7 @@ public class S01PointEntry {
                                           // название методов в Java пишут с маленькой буквы,
                                           // например, main, println и др.
     
-         // code.xxxxx // далее пишется некий код для строки "String x"
+         // code.xxxxx // далее пишется некий код для "String"
     } 
  }
  
