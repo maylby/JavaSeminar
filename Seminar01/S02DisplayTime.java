@@ -34,7 +34,5 @@ public class S02DisplayTime {
 		 * LocalTime // работает, только со временем
          */                                        
         System.out.println(LocalDateTime.now());
-        
-    }
-      
+    }  
 }
