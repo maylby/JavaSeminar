@@ -39,14 +39,13 @@ public class S04Cycles {
                                                 строка "Форматировать документ"
                                                  */
 		}
-
-        int arr[] = {1, 2, 3};
         /*
          * Система сообщает, что
          * Значение локальной переменной "iterable_element" не используется Java
          * Почему появилось данное сообщение?
          * Что не так?
          */
+        int arr[] = {1, 2, 3};
 		for (int iterable_element : arr) { /*
                                             цикл "foreahc" - для коллекций
                                             (перебор элементов без индекса)
@@ -57,7 +56,11 @@ public class S04Cycles {
                                             можно только перебирать и выводить
                                             */ 
         }
-        
+        System.err.println(arr);
+
+        /*
+         * Условия выполнения (if, else if, else)
+         */
         boolean b = true;
         if (b) {
                                                 
