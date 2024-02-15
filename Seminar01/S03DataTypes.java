@@ -13,7 +13,7 @@ public class S03DataTypes {
         float f = 4.5f; // вещественные числа (250 символов)
                         // тип "float" используется с целью экономии ресурсов
         boolean b = true; // истина (true) / ложь (false) - логический тип
-        char ch = 'a';  // символьный тип данных
+        char ch = 'N';  // символьный тип данных
                         // значение - строго в одинарных кавычках
                         // "char" неявно является целочисленным типом, т.к.
                         // за его значением скрывается код символа, т.е. число
@@ -22,6 +22,7 @@ public class S03DataTypes {
         System.out.println(f);
         System.out.println(b);
         System.out.println(ch);
+        println("");
     }
     public static String println(String a) {
         String str = "Hello";   // Значение пишем, только в двойных кавычках
@@ -35,6 +36,6 @@ public class S03DataTypes {
                                 // (int, double, float, boolean и т.д.
         return str; // возвращает строку, т.к. 
                     // на входе (public static) использован 
-                    // метод (класс?) "String"	
+                    // метод (класс?) "String"	        
     }
 }
