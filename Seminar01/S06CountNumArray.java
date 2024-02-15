@@ -55,3 +55,9 @@ public class S06CountNumArray {
 		System.out.print(max);
 	}
 }
+
+/*
+ * 01:20:40 
+ * Выделение кода в отдельный метод (рефакторинг)
+ * (см. скрин )
+ */
