@@ -12,21 +12,25 @@ public class S07MoveValuesToEnd2 {
         public static void main(String[] args) {
 		int[] arr = {3,2,2,3};
 		int val = 3;
-		int rightIndex = arr.length - 1; 
-		int leftIndex = 0;  
-        
-		while (arr[rightIndex] == val) { 
-            
-			rightIndex--; 
-		}
-		while (leftIndex < rightIndex) { 
-			if (arr[leftIndex] == val) { 
-				arr[leftIndex] = arr[rightIndex]; 
-				arr[rightIndex] = val; 
-				rightIndex--; 
-			}
-			leftIndex++; 
-		}
+		moveValuesToEndArray(arr, val);
 		System.out.println(Arrays.toString(arr));
 	}
+
+        private static void moveValuesToEndArray(int[] arr, int val) {
+            int rightIndex = arr.length - 1; 
+            int leftIndex = 0;  
+            
+            while (arr[rightIndex] == val) { 
+                
+            	rightIndex--; 
+            }
+            while (leftIndex < rightIndex) { 
+            	if (arr[leftIndex] == val) { 
+            		arr[leftIndex] = arr[rightIndex]; 
+            		arr[rightIndex] = val; 
+            		rightIndex--; 
+            	}
+            	leftIndex++; 
+            }
+        }
 }
