@@ -31,19 +31,19 @@ public class S07MoveValuesToEnd {
                                          // длине массива минус один
                                          // (последний элемент массива)
 		int leftIndex = 0;  // левый индекс равен нулю 
-                            // (первый элемент массива)
+                            // (1-й элемент массива)
 		while (arr[rightIndex] == val) { // Пока значение правого индекса
-                                         // равно значению "val" (= 3),
-			rightIndex--; // правый индекс уменьшаем на единицу
+                                         // равно значению "val"
+			rightIndex--; // правый индекс уменьшить на единицу
 		}
-		while (leftIndex < rightIndex) { // Пока левый индексе меньше правого,
-			if (arr[leftIndex] == val) { // если левое значение равно "val", то
-				arr[leftIndex] = arr[rightIndex]; // передаём левому элементу
-                                                  // значение правого,
-				arr[rightIndex] = val; // а правому пердаём занчение "val" (= 3).
-				rightIndex--; // правый индекс уменьшаем на единицу
+		while (leftIndex < rightIndex) { // Пока левый индексе меньше правого
+			if (arr[leftIndex] == val) { // если левое значение равно "val"
+				arr[leftIndex] = arr[rightIndex]; // левому элементу передать
+                                                  // значение правого
+				arr[rightIndex] = val; // правому пердать значение "val"
+				rightIndex--; // правый индекс уменьшить на единицу
 			}
-			leftIndex++; // левый индекс увеличиваем на единицу
+			leftIndex++; // левый индекс увеличить на единицу
 		}
 		System.out.println(Arrays.toString(arr));
         /*
