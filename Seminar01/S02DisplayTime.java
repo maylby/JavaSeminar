@@ -20,9 +20,12 @@ import java.time.LocalDateTime;
 
 public class S02DisplayTime {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");  // вызывать строку набором "System" или "print",
-                                                // "print" удобнее, подсказка из двух строк
-                                                // ("System.out.println" и "System.err.println") 
+        System.out.println("Hello, World!");  // вызывать строку набором 
+                                                // "System" или "print",
+                                                // "print" удобнее, 
+                                                // подсказка из двух строк
+                                                // "System.out.println" 
+                                                // "System.err.println" 
         /*
         Старые методы:
          * Data // не рекомендован к использованию
@@ -33,10 +36,13 @@ public class S02DisplayTime {
 		 * LocalDateTime // работает с датой и временем
 		 * LocalTime // работает, только со временем
          */                                        
-        System.out.println(LocalDateTime.now());
-    }  
+        System.out.println(LocalDateTime.now()); // "now()" - текущее время
+
+        /*
+         * Вывод:
+         * Hello, World!
+         * 2024-02-15T14:14:37.613670800
+         */
+    }
 }
 
-// Вывод:
-// Hello, World!
-// 2024-02-15T14:14:37.613670800
