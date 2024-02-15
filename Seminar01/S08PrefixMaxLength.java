@@ -17,7 +17,7 @@ package JavaSeminar.Seminar01;
  */
 public class S08PrefixMaxLength {
     public static void main(String[] args) {
-		String[] strs = {"flower", "flow", "flight"};
+		String[] strs = {"flower", "flow", "flood", "float", "flight"};
 		String pref = getLongestPrefix(strs);
 		System.out.print(pref);
 	}
