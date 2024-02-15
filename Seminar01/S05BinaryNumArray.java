@@ -13,5 +13,34 @@ https://gb.ru/lessons/414471
 package JavaSeminar.Seminar01;
 
 public class S05BinaryNumArray {
-    
+
+ 	public static void main(String[] args) {
+		int[] array = {1,1,0,1,1,1};
+		int count = 0;
+		int max = 0;
+		for (int el: array) {
+			if (el == 1) {
+				count++;
+				if (count > max) max = count; // v1:
+								// если count больше max,
+								// в max прередать count
+
+				max = Math.max(count, max); // v2:
+								// сравнить count и max,
+							  	// большее передать в max
+
+				max = count > max? count : max; // v3:
+								// (теренарный оператор)
+								// если count больше max,
+								// в max прередать count,
+								// иначе вернуть max
+			} else {
+				count = 0; // возвращаем к исходному значению (ноль)
+			}
+		}
+		// см. 01:21:13, 02_(С-02), выделение решения в отдельный метод
+		// повторить в VSCode
+
+		System.out.print(max);
+	}
 }
