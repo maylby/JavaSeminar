@@ -36,3 +36,7 @@ public class S02DisplayTime {
         System.out.println(LocalDateTime.now());
     }  
 }
+
+// Вывод:
+// Hello, World!
+// 2024-02-15T14:14:37.613670800
