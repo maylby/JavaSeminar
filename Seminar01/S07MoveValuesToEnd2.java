@@ -12,14 +12,14 @@ public class S07MoveValuesToEnd2 {
     public static void main(String[] args) {
 		int[] arr = {3,2,2,3};
 		int val = 3;
-		moveValuesToEndArray(arr, val);
+		moveNumsToEndArray(arr, val);
 		System.out.println(Arrays.toString(arr));
 	}
      /*
      * Метод перемещения элементов 
      * с заданным значением в конец массива
      */
-    private static void moveValuesToEndArray(int[] arr, int val) {
+    private static void moveNumsToEndArray(int[] arr, int val) {
         int rightIndex = arr.length - 1; 
         int leftIndex = 0;  
             
