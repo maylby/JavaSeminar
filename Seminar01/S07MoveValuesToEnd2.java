@@ -17,7 +17,7 @@ public class S07MoveValuesToEnd2 {
 	}
         /*
          * Метод перемещения элементов 
-         * с заданными значениями в конец массива
+         * с заданным значением в конец массива
          */
         private static void moveValuesToEndArray(int[] arr, int val) {
             int rightIndex = arr.length - 1; 
