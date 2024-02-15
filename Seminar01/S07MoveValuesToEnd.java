@@ -35,7 +35,8 @@ public class S07MoveValuesToEnd {
 		}
 		while (leftIndex < rightIndex) { // Пока левый индексе меньше правого,
 			if (arr[leftIndex] == val) { // если левое значение равно "val", то
-				arr[leftIndex] = arr[rightIndex]; // передаём левому значение правого,
+				arr[leftIndex] = arr[rightIndex]; // передаём левому элементу
+                                                  // значение правого,
 				arr[rightIndex] = val; // а правому пердаём занчение "val" (= 3).
 				rightIndex--; // правый индекс уменьшаем на единицу
 			}
