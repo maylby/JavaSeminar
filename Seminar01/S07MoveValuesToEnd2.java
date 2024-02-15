@@ -15,7 +15,10 @@ public class S07MoveValuesToEnd2 {
 		moveValuesToEndArray(arr, val);
 		System.out.println(Arrays.toString(arr));
 	}
-
+        /*
+         * Метод перемещения элементов 
+         * с заданными значениями в конец массива
+         */
         private static void moveValuesToEndArray(int[] arr, int val) {
             int rightIndex = arr.length - 1; 
             int leftIndex = 0;  
