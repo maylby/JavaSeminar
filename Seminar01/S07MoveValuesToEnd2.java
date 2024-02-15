@@ -9,31 +9,31 @@ package JavaSeminar.Seminar01;
 import java.util.Arrays;
 
 public class S07MoveValuesToEnd2 {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 		int[] arr = {3,2,2,3};
 		int val = 3;
 		moveValuesToEndArray(arr, val);
 		System.out.println(Arrays.toString(arr));
 	}
-        /*
-         * Метод перемещения элементов 
-         * с заданным значением в конец массива
-         */
-        private static void moveValuesToEndArray(int[] arr, int val) {
-            int rightIndex = arr.length - 1; 
-            int leftIndex = 0;  
+     /*
+     * Метод перемещения элементов 
+     * с заданным значением в конец массива
+     */
+    private static void moveValuesToEndArray(int[] arr, int val) {
+        int rightIndex = arr.length - 1; 
+        int leftIndex = 0;  
             
-            while (arr[rightIndex] == val) { 
+        while (arr[rightIndex] == val) { 
                 
-            	rightIndex--; 
-            }
-            while (leftIndex < rightIndex) { 
-            	if (arr[leftIndex] == val) { 
-            		arr[leftIndex] = arr[rightIndex]; 
-            		arr[rightIndex] = val; 
-            		rightIndex--; 
-            	}
-            	leftIndex++; 
-            }
+        	rightIndex--; 
         }
+        while (leftIndex < rightIndex) { 
+        	if (arr[leftIndex] == val) { 
+        		arr[leftIndex] = arr[rightIndex]; 
+        		arr[rightIndex] = val; 
+         		rightIndex--; 
+        	}
+        	leftIndex++; 
+        }
+    }
 }
