@@ -18,11 +18,11 @@ package JavaSeminar.Seminar01;
 public class S08PrefixMaxLength {
     public static void main(String[] args) {
 		String[] strs = {"flower", "flow", "flight"};
-		String pref = findMaxLengthByPrefix(strs);
+		String pref = getLongestPrefix(strs);
 		System.out.print(pref);
 	}
 
-    private static String findMaxLengthByPrefix(String[] strs) {
+    private static String getLongestPrefix(String[] strs) {
         String pref = strs[0];
 		for (int i = 1; i < strs.length; i++) {
 			while (strs[i].indexOf(pref) != 0) {
