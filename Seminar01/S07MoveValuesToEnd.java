@@ -21,7 +21,7 @@ package JavaSeminar.Seminar01;
 import java.util.Arrays;
 /* 
  * Данный код, преобразованнный в отдельный метод, 
- * размещён в файле "S07MoveValuesToEnd2"
+ * размещён в файле "S07MoveValuesToEnd2" (VSCode)
  */
 public class S07MoveValuesToEnd {
     public static void main(String[] args) {
@@ -45,6 +45,10 @@ public class S07MoveValuesToEnd {
 			}
 			leftIndex++; // левый индекс увеличиваем на единицу
 		}
-		System.out.println(Arrays.toString(arr)); // [4, 2, 2, 1, 5, 35, 10, 0, 3, 3, 3]
+		System.out.println(Arrays.toString(arr));
+        /*
+         * Вывод:
+         * [4, 2, 2, 1, 5, 35, 10, 0, 3, 3, 3]
+         */
 	}
 }
