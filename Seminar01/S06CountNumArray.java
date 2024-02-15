@@ -12,7 +12,7 @@ https://gb.ru/lessons/414471
  */
 package JavaSeminar.Seminar01;
 
-public class S06BinaryNumArray {
+public class S06CountNumArray {
 
  	public static void main(String[] args) {
 		int[] array = {1,1,0,1,1,1};
