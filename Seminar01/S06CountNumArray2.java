@@ -16,7 +16,12 @@ public class S06CountNumArray2 {
 
  	public static void main(String[] args) {
 		int[] array = {1,1,0,1,1,1};
-		int count = 0;
+		int max = getMaxCountOnes(array);
+		System.out.print(max);
+	}
+
+    private static int getMaxCountOnes(int[] array) {
+        int count = 0;
 		int max = 0;
 		for (int el: array) {
 			if (el == 1) {
@@ -29,7 +34,7 @@ public class S06CountNumArray2 {
 				count = 0; 
 			}
 		}
-		System.out.print(max);
-	}
+        return max;
+    }
 }
 
