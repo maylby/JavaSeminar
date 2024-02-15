@@ -6,7 +6,7 @@ https://gb.ru/lessons/414471
 package JavaSeminar.Seminar01;
 
 public class S03DataTypes {
-    public static String println(String a) {
+    public static void main(String[] args) {
         
         int num = 345;
         double d = 4.5;
@@ -17,7 +17,13 @@ public class S03DataTypes {
                         // значение - строго в одинарных кавычках
                         // "char" неявно является целочисленным типом, т.к.
                         // за его значением скрывается код символа, т.е. число
-
+        System.out.println(num);
+        System.out.println(d);
+        System.out.println(f);
+        System.out.println(b);
+        System.out.println(ch);
+    }
+    public static String println(String a) {
         String str = "Hello";   // Значение пишем, только в двойных кавычках
                                 // Название - с заглавной буквыв, т.к. 
                                 // "String" - ссылочный тип данных (все классы)
@@ -31,5 +37,4 @@ public class S03DataTypes {
                     // на входе (public static) использован 
                     // метод (класс?) "String"	
     }
-    
 }
