@@ -22,7 +22,7 @@ import java.util.Arrays;
 
 public class S07MoveValuesToEnd {
     public static void main(String[] args) {
-		int[] arr = {3,2,2,3};
+		int[] arr = {3,2,2,3,5,35,3,0,10,1,4};
 		int val = 3;
 		int rightIndex = arr.length - 1; // правый индекс равен 
                                          // длине массива минус один
@@ -42,6 +42,7 @@ public class S07MoveValuesToEnd {
 			}
 			leftIndex++; // левый индекс увеличиваем на единицу
 		}
-		System.out.println(Arrays.toString(arr));
+		System.out.println(Arrays.toString(arr)); // [4, 2, 2, 1, 5, 35, 10, 0, 3, 3, 3]
 	}
 }
+// Преобразование кода в отдельный метод см. в файле "S07MoveValuesToEnd2"
