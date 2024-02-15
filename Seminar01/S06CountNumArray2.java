@@ -19,7 +19,11 @@ public class S06CountNumArray2 {
 		int max = getMaxCountOnes(array);
 		System.out.print(max);
 	}
-
+    /*
+     * Код задачи из файла "S06CountNumArray",
+     * переобразованный в отдельный метод "getMaxCountOnes",
+     * с помощью рефакторинга (функционал VSCode)
+     */
     private static int getMaxCountOnes(int[] array) {
         int count = 0;
 		int max = 0;
