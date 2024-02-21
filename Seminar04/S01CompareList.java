@@ -128,8 +128,8 @@ public class S01CompareList {
 }
 /*
 Добавление в конец списка
-0 (ArrayList)
-16 (LinkedList)
+7 (ArrayList)
+6 (LinkedList)
 
 Добавление в начало списка
 2918 (ArrayList)
@@ -137,5 +137,5 @@ public class S01CompareList {
 
 Добавление в середину списка
 1348 (ArrayList)
-25700 (LinkedList) // должен был вывестим быстрее, чем "ArrayList"
+25700 (LinkedList) // должен был вывести быстрее, чем "ArrayList"
  */
