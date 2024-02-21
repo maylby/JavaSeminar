@@ -12,6 +12,10 @@ https://gb.ru/lessons/414474
 Нужно реализовать методы:
 size(), empty(), push(), peek(), pop().
 
+
+Решение
+(Алекандр Верзун)
+
  */
 
 package JavaSeminar.Seminar04;
