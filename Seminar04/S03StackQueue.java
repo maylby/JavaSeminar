@@ -34,8 +34,8 @@ public class S03StackQueue {
 
 		int[] arr = {4,8,5,0,3,8,7,2};
 
-		getStack(arr); // вызов метода
 		getQueue(arr); // вызов метода
+        getStack(arr); // вызов метода
 	}
 
 	private static void getQueue(int[] arr) {
