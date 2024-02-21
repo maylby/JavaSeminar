@@ -70,6 +70,7 @@ public class S03StackQueue {
 							                        // через пробел
 		}	
 	}}
+
 /*
  * Результат:
  * 
