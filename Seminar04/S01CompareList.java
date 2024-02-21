@@ -126,3 +126,16 @@ public class S01CompareList {
         return linkedList;
     }
 }
+/*
+Добавление в конец списка
+0 (ArrayList)
+16 (LinkedList)
+
+Добавление в начало списка
+2918 (ArrayList)
+35 (LinkedList)
+
+Добавление в середину списка
+1348 (ArrayList)
+25700 (LinkedList) // должен был вывестим быстрее, чем "ArrayList"
+ */
