@@ -14,6 +14,9 @@ https://gb.ru/lessons/414474
 3. Если введено print~num, выводит строку из позиции num 
    в связном списке и удаляет её из списка.
 
+
+Решение
+(Андрей Лапотько)
  */
 package JavaSeminar.Seminar04;
 /*
@@ -61,11 +64,13 @@ public class S02ParseStirng {
         }
         scanner.close();
     }
-
+    /*
+     * Три строки кода ниже выведены в отдельный метод "messageForInput"
+     */
     private static void messageForInput() {
-    System.out.println("Введите строку вида text~num для добавления элемента в список.");
-    System.out.println("Для вывода и удаления из списка: print~num");
-    System.out.println("Для выхода: end");
+        System.out.println("Введите строку вида text~num для добавления элемента в список.");
+        System.out.println("Для вывода и удаления из списка: print~num");
+        System.out.println("Для выхода: end");
     }
 }
 
