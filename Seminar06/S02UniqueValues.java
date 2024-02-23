@@ -37,6 +37,7 @@ public class S02UniqueValues {
         // System.out.println(getPercentUnique(arr));
         double result = getPercentUnique(arr); // передать вызванный метод переменной 
         System.out.println(result); // вывод результата
+        
     }
 
     /*
