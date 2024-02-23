@@ -34,7 +34,7 @@ import java.util.TreeSet;
  */
 public class S01CompareSets {
     public static void main(String[] args) {
-        
+
         Set<Integer> nashSet = new HashSet<>(Arrays.asList(3, 6, 43, 8, 11, 7, 33, 3, 4, 8));
         Set<Integer> linkedHashSet = new LinkedHashSet<>(Arrays.asList(3, 6, 43, 8, 11, 7, 33, 3, 4, 8));
         Set<Integer> treeSet = new TreeSet<>(Arrays.asList(3, 6, 43, 8, 11, 7, 33, 3, 4, 8));
@@ -44,3 +44,21 @@ public class S01CompareSets {
         System.out.println(treeSet);    
     }
 }
+
+
+/*
+00:35:30
+
+Задание №1
+
+1. Напишите метод, который заполнит массив 
+из 1000 элементов случайными цифрами от 0 до 24.
+
+2. Создайте метод, в который передайте заполненный выше массив, 
+с помощью Set вычислите процент уникальных значений в данном массиве 
+и верните его в виде числа с плавающей запятой.
+
+Для вычисления процента используйте формулу:
+процент уникальных чисел = количество уникальных чисел * 100 / общее количество чисел в массиве.
+
+*/
