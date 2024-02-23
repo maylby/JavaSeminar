@@ -57,6 +57,6 @@ public class S04Cat {
     @Override   // данное слово визуально отмечает код,  
                 // переопределяющий строку
     public String toString() {
-        return "Имя: " + name + "\nЦвет: " + color + "\nВозраст: " + age;
+        return "Имя: " + name + "\n" + "Цвет: " + color + "\n" + "Возраст: " + age;
     }
 }
