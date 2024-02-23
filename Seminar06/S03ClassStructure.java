@@ -3,10 +3,10 @@
 https://gb.ru/lessons/414476
 
 
-01:07:00
+01:36:00
 
 Задание №2
-(Марина Вершинина)
+(Андрей Лопатько)
  */
 package JavaSeminar.Seminar06;
 
