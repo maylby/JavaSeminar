@@ -9,8 +9,8 @@ https://gb.ru/lessons/414476
 
 Решение
 (Марина Вершинина)
-*/
 
+*/
 package JavaSeminar.Seminar06;
 
 import java.util.HashSet;
@@ -19,7 +19,6 @@ import java.util.Set;
 
 /**
  * S02UniqueValues
- * 
  * 
  * 1. Напишите метод, который заполнит массив 
  * из 1000 элементов случайными цифрами от 0 до 500. 
