@@ -66,6 +66,6 @@ public class S02UniqueValues {
          * и общего количества элементов массива
          */
         double res = (double)set.size() * 100 / arr.length;  
-        return res;  
+        return res; 
     }
 }
