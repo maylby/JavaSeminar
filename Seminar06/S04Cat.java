@@ -10,6 +10,8 @@ https://gb.ru/lessons/414476
  */
 package JavaSeminar.Seminar06;
 
+import java.util.Objects;
+
 /**
 1. Реализуйте 1 из вариантов класса Cat из предыдущего задания, 
 можно использовать не все придуманные поля и методы. 
@@ -54,11 +56,30 @@ public class S04Cat {
         this.color = color;
     }
 
-    @Override   // данное слово визуально отмечает код,  
-                // переопределяющий строку
+    /*
+     * метод переопределения строки
+     */
+    @Override   
     public String toString() {
         return "Имя: " + name + 
         "\n" + "Цвет: " + color + 
         "\n" + "Возраст: " + age;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        S04Cat cat = (S04Cat) obj;
+        return name.equals(cat.name) && age == cat.age && color.equals(cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, color);
     }
 }
