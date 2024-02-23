@@ -53,4 +53,10 @@ public class S04Cat {
     public void setColor(String color) {
         this.color = color;
     }
+
+    @Override   // данное слово визуально отмечает код,  
+                // переопределяющий строку
+    public String toString() {
+        return "Имя: " + name + "\nЦвет: " + color + "\nВозраст: " + age;
+    }
 }
