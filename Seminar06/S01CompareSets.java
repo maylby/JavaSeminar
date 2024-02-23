@@ -34,10 +34,11 @@ import java.util.TreeSet;
  */
 public class S01CompareSets {
     public static void main(String[] args) {
+        
         Set<Integer> nashSet = new HashSet<>(Arrays.asList(3, 6, 43, 8, 11, 7, 33, 3, 4, 8));
-
         Set<Integer> linkedHashSet = new LinkedHashSet<>(Arrays.asList(3, 6, 43, 8, 11, 7, 33, 3, 4, 8));
         Set<Integer> treeSet = new TreeSet<>(Arrays.asList(3, 6, 43, 8, 11, 7, 33, 3, 4, 8));
+        
         System.out.println(nashSet);
         System.out.println(linkedHashSet);
         System.out.println(treeSet);    
