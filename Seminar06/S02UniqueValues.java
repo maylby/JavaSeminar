@@ -60,8 +60,11 @@ public class S02UniqueValues {
         for (int elem : arr) { // перебор элементов массива
             set.add(elem); // добавление уникальных значений
         }
-        double res = (double)set.size() * 100 / arr.length; // соотношение числа уникальных значений
-                                                            // и общего количества элементов массива
+        /*
+         * процентное соотношение числа уникальных значений
+         * и общего количества элементов массива
+         */
+        double res = (double)set.size() * 100 / arr.length;  
         return res;  
     }
 }
