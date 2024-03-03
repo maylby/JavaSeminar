@@ -23,3 +23,46 @@ https://gb.ru/lessons/414475
 
 */
 
+package JavaSeminar.Seminar05.Task02;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
+public class Brackets {
+    public static void main(String[] args) {
+		String[] strings = {
+			"a+(d*3)", "[a+(1*3)", "[6+(3*3)]", 
+			"{a}[+]{(d*3)}", "<{a}+{(d*3)}>", "{a+]}{(d*3)}" };
+			
+			for  (String string : strings) {
+				boolean result = checkBrackets(string);
+				System.out.println(string + " -> " + result);
+			}
+	}
+	public static boolean checkBrackets(String str) { 
+		Map<Character, Character> map = getBracketsMap();
+		Stack<Character> stack = new Stack<>();
+
+		for (char c : str.toCharArray()) {
+			if (map.containsValue(c)) { // находим значение, например, "("
+				stack.push(c); // записываем в стек
+			} else if (map.containsKey(c)) { // ищем ключ для значения
+				if (stack.isEmpty() || stack.pop() != map.get(c)) { // Если стек пустой или 
+                                                                    // не найден ключ значения
+					return false;                                   // вернуть false (ложь)
+				}
+            }
+        }
+		return stack.isEmpty(); // иначе, вернуть пустой стек
+	}
+	public static Map<Character, Character> getBracketsMap() {
+
+		Map<Character, Character> map = new HashMap<>();
+		map.put(')', '(');
+		map.put(']', '[');
+		map.put('}', '{');
+		map.put('>', '<');
+		return map;
+	}
+}
