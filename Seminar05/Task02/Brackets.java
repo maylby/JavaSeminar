@@ -66,3 +66,14 @@ public class Brackets {
 		return map;
 	}
 }
+/*
+Вывод:
+
+a+(d*3) -> true
+[a+(1*3) -> false    
+[6+(3*3)] -> true    
+{a}[+]{(d*3)} -> true
+<{a}+{(d*3)}> -> true
+{a+]}{(d*3)} -> false
+
+ */
