@@ -85,8 +85,8 @@ public class S04ArrayStack {
         arr[++indexUp] = num;   // "++indexUp" префиксный инкремент 
                                 // (см. приоритет действия)
                                 // "arr[++indexUp]" заменяет две записи:
-                                // arr[indexUp + 1] = num; (увеличение индекса)
-                                // index++; (применение?)
+                                // 1. arr[indexUp + 1] = num; (увеличение индекса)
+                                // 2. index++; (применение?)
     }
 
     /*
