@@ -17,7 +17,9 @@ https://gb.ru/lessons/414475
 package JavaSeminar.Seminar05.Task01;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /*
 Создать структуру для хранения 
@@ -33,7 +35,11 @@ import java.util.Map;
  */
 public class PassportName {
     public static void main(String[] args) {
-        Map<Integer, String> hashMap = new HashMap<>();
+        
+        // Map<Integer, String> hashMap = new HashMap<>(); // не сохраняет порядок
+        // Map<Integer, String> hashMap = new LinkedHashMap(); // сохраняет порядок
+        Map<Integer, String> hashMap = new TreeMap<>(); // сортирует по ключам
+        
         hashMap.put(123456, "Иванов");
         hashMap.put(321456, "Васильев");
         hashMap.put(234561, "Петрова");
@@ -43,6 +49,7 @@ public class PassportName {
         
         String targetName = "Иванов";
         System.out.println("Данные по сотрудникам с фамилией " + targetName);
+        System.out.println();
 
         for (int passportNum : hashMap.keySet()) {
             String name = hashMap.get(passportNum);
@@ -53,8 +60,11 @@ public class PassportName {
         }}}
         /*
         Вывод:
+
         Данные по сотрудникам с фамилией Иванов
+
         Номер паспорта: 123456  Фамилия: Иванов
         Номер паспорта: 234432  Фамилия: Иванов
         Номер паспорта: 345678  Фамилия: Иванов
+
         */
