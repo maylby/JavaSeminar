@@ -28,18 +28,11 @@ public class ProductData {
         cpus.put("Intel Core i5", 9000);
         cpus.put("AMD Ryzen 7", 11000);
         cpus.put("Intel Core i7", 14000);
+        cpus.put("Qualcomm 8cx", 11000);
         cpus.put("AMD Ryzen 9", 23000);
         cpus.put("Intel Core i9", 28000);
         cpus.put("AMD Ryzen 3", 6000);
         cpus.put("Intel Core m3", 5000);
-        // cpus.put("Qualcomm Snapdragon 8cx", 11000);
-
-        // Map<String, Integer> graphicsProcessors = new TreeMap<>();
-        // graphicsProcessors.put("NVIDIA GeForce GTX 1660Ti 6GB", 23000);
-        // graphicsProcessors.put("AMD Radeon RX 5700XT 8GB", 28000);
-        // graphicsProcessors.put("NVIDIA GeForce RTX 2070SUPER 8GB", 33000);
-        // graphicsProcessors.put("AMD Radeon RX 5600XT 6GB", 18000);
-        // graphicsProcessors.put("NVIDIA GeForce RTX 2080Ti 11GB", 55000);
 
         Map<String, Integer> screenSizes = new LinkedHashMap<>();
         screenSizes.put("13.0\"", 25000);
@@ -66,10 +59,6 @@ public class ProductData {
             randIndex = r.nextInt(hdds.size());
             String hdd = (String) hdds.keySet().toArray()[randIndex];
             price += hdds.get(hdd);
-
-            // randIndex = r.nextInt(graphicsProcessors.size());
-            // String graphicsProcessor = (String) graphicsProcessors.keySet().toArray()[randIndex];
-            // price += graphicsProcessors.get(graphicsProcessor);
 
             randIndex = r.nextInt(screenSizes.size());
             String screenSize = (String) screenSizes.keySet().toArray()[randIndex];
