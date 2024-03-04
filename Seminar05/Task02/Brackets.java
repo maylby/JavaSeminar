@@ -47,11 +47,14 @@ public class Brackets {
 		for (char c : str.toCharArray()) {
 			if (map.containsValue(c)) { // находим значение, например, "("
 				stack.push(c); // записываем в стек
+ 
 			} else if (map.containsKey(c)) { // ищем ключ для значения
-				if (stack.isEmpty() || stack.pop() != map.get(c)) { // Если стек пустой или 
-                                                                    // не найден ключ значения
-					return false;                                   // вернуть false (ложь)
-				}
+
+                /*
+                 * Если стек пустой или не найден ключ значения, вернуть false (ложь)
+                 * ("return" записан в одну строку с условием)
+                 */                  
+				if (stack.isEmpty() || stack.pop() != map.get(c)) return false;
             }
         }
 		return stack.isEmpty(); // иначе, вернуть пустой стек
