@@ -83,8 +83,4 @@ public class Laptops {
                 getPrice() == laptops.getPrice();
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getRAM(), getHDD(), getCPU(), getScreenSize(), getPrice());
-    }
 }
