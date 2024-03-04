@@ -60,5 +60,15 @@ public class Laptops {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Ноутбук{" +
+                "Процессор (CPU): '" + cpu + '\'' +
+                ", Оперативная память (RAM): " + ram +
+                ", Жесткий диск (HDD): " + hdd +
+                ", Размер экрана: " + screenSize +
+                ", Цена: " + price +
+                '}';
+    }
 
 }
