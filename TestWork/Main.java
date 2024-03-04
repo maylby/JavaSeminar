@@ -26,6 +26,6 @@ https://gb.ru/lessons/414476/homework
 
 package JavaSeminar.TestWork;
 
-public class Test {
+public class Main {
     
 }
