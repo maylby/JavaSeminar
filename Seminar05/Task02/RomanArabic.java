@@ -29,9 +29,10 @@ public class RomanArabic {
 public static void main(String[] args) {
     String romanNum = "MMXXIV";
     System.out.println(romanToArabic(romanNum));
-
     }
+
     public static Map<Character, Integer> getRomanArabicMap() {
+        
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);
         map.put('V', 5);
@@ -41,8 +42,8 @@ public static void main(String[] args) {
         map.put('D', 500);
         map.put('M', 1000);
         return map;
-
     }
+
     public static int romanToArabic(String romanNumber) {
         Map<Character, Integer> map = getRomanArabicMap();
         int result = 0;
@@ -57,7 +58,6 @@ public static void main(String[] args) {
             prefValue = currentValue;
         }
         return result;
-
     }
 }
 
