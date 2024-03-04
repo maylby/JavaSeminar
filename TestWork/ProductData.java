@@ -48,7 +48,36 @@ public class ProductData {
         screenSizes.put("17.0\"", 40000);
         screenSizes.put("12.0\"", 20000);
 
+        Set<Laptops> laptops = new HashSet<>();
+        for (int i = 0; i < 100; i++) {
 
+            int price = 0;
+
+            Random r = new Random();
+
+            int randIndex = r.nextInt(cpus.size());
+            String processor = (String) cpus.keySet().toArray()[randIndex];
+            price += cpus.get(processor);
+
+            randIndex = r.nextInt(rams.size());
+            String ram = (String) rams.keySet().toArray()[randIndex];
+            price += rams.get(ram);
+
+            randIndex = r.nextInt(hdds.size());
+            String hdd = (String) hdds.keySet().toArray()[randIndex];
+            price += hdds.get(hdd);
+
+            // randIndex = r.nextInt(graphicsProcessors.size());
+            // String graphicsProcessor = (String) graphicsProcessors.keySet().toArray()[randIndex];
+            // price += graphicsProcessors.get(graphicsProcessor);
+
+            randIndex = r.nextInt(screenSizes.size());
+            String screenSize = (String) screenSizes.keySet().toArray()[randIndex];
+            price += screenSizes.get(screenSize);
+
+            laptops.add(new Laptops(processor, ram, hdd, screenSize, price));
+        }
+        return laptops;
     }
 }
 
