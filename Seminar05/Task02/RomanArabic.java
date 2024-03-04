@@ -7,11 +7,6 @@ https://gb.ru/lessons/414475
 
 Задание №3
 
-Написать метод, который переведет число 
-из римского формата записи в арабский.
-
-Например, MMXXII = 2022
-
 http://graecolatini.bsu.by/htm-different/num-converter-roman.htm
 Принципы римской с/с
 
@@ -24,7 +19,11 @@ package JavaSeminar.Seminar05.Task02;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+ Написать метод, который переведет число 
+ из римского формата записи в арабский.
+ Например, MMXXII = 2022
+ */
 public class RomanArabic {
 
 public static void main(String[] args) {
