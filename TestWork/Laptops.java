@@ -71,4 +71,20 @@ public class Laptops {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Laptops)) return false;
+        Laptops laptops = (Laptops) o;
+        return Objects.equals(getRAM(), laptops.getRAM()) &&
+                Objects.equals(getHDD(), laptops.getHDD()) &&
+                Objects.equals(getScreenSize(), laptops.getScreenSize()) &&
+                Objects.equals(getCPU(), laptops.getCPU()) &&
+                getPrice() == laptops.getPrice();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getRAM(), getHDD(), getCPU(), getScreenSize(), getPrice());
+    }
 }
